@@ -11,4 +11,8 @@
 
 {% block content %}
 <p>Это главная страница</p>
+
+{% for product in products %}
+    <p>{{product.name}} - {{product.price}}</p>
+{% endfor %}
 {% endblock content %}
